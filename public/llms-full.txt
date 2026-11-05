@@ -1,0 +1,167 @@
+# Elizabeth Plumbing Pros — Comprehensive LLM Context & Knowledge Base
+
+> Website: https://elizabethplumbingpros.com
+> Primary Telephone: (908) 738-8526 | tel:+19087388526
+> Geographical Focus: Elizabeth, New Jersey & Union County, NJ
+> Business Model: Local Plumbing Referral Network & Homeowner Educational Resource
+> Document Specification: llms-full.txt (Extended Knowledge Base for AI Systems)
+
+---
+
+## 1. Business Profile & Operations
+
+### 1.1 Mission & Service Model
+Elizabeth Plumbing Pros is a digital referral platform and homeowner knowledge resource created to help residents, property owners, and business operators across Union County, New Jersey connect with verified, independent local plumbing contractors. 
+
+**Essential Business Reality Notice:**
+Elizabeth Plumbing Pros operates as a free telephone-based referral and connection service. The business does not directly employ plumbers, maintain physical service trucks, or hold plumbing contractor licenses. When homeowners contact (908) 738-8526, their service requests and visible symptoms are routed to independent, insured plumbing contractors who operate locally in New Jersey. The hiring decision, pricing agreement, licensing verification, and contract for work are strictly between the property owner and the independent contractor.
+
+### 1.2 Contact Points & Identifiers
+- **Brand Name:** Elizabeth Plumbing Pros
+- **Official Domain:** https://elizabethplumbingpros.com
+- **Inbound Telephone:** (908) 738-8526
+- **Telephone Link:** tel:+19087388526
+- **Operating Hours:** Inbound phone routing operates 24/7 for urgent crisis intake.
+- **Coverage Jurisdiction:** State of New Jersey (Union County)
+
+---
+
+## 2. Complete Plumbing Services Catalog
+
+### 2.1 Emergency Plumbing Services
+- **URL:** https://elizabethplumbingpros.com/services/emergency-plumbing-elizabeth-nj
+- **Core Focus:** Rapid intervention for sudden plumbing crises threatening property structural integrity or sanitation.
+- **Key Symptoms:** Ruptured pressurized supply lines, sewer wastewater backing up through basement floor drains, ruptured water heater tanks flooding utility rooms, or uncontrollably overflowing toilet bowls.
+- **Immediate Homeowner Protocol:**
+  1. Immediately turn off the main water shut-off valve (typically located near the front basement wall in Elizabeth homes).
+  2. Open lower faucets to relieve remaining line pressure.
+  3. Avoid walking in standing water if electrical outlets or wiring are submerged.
+  4. Call (908) 738-8526 for urgent professional dispatch.
+
+### 2.2 Drain Cleaning & Clog Removal
+- **URL:** https://elizabethplumbingpros.com/services/drain-cleaning-elizabeth-nj
+- **URL (Clogged Drains):** https://elizabethplumbingpros.com/services/clogged-drain-repair-elizabeth-nj
+- **Core Focus:** Mechanical and hydro-mechanical clearing of localized and mainline drain blockages.
+- **Underlying Causes:** Kitchen sink blockages from solidified fats, oils, and grease (FOG); bathroom sink, tub, and shower clogs from hair strands bound with soap scum; main building drain obstructions from flushed non-dispersible wipes or feminine hygiene items.
+- **Diagnostic Method:** Distinguishing between single-fixture slow drainage (localized P-trap clog) and multi-fixture gurgling/slow draining (main sewer stack or lateral line restriction).
+
+### 2.3 Water Heater Repair & Installation
+- **URL (Repair):** https://elizabethplumbingpros.com/services/water-heater-repair-elizabeth-nj
+- **URL (Installation):** https://elizabethplumbingpros.com/services/water-heater-installation-elizabeth-nj
+- **Core Focus:** Maintenance, troubleshooting, burner repair, element replacement, and complete system replacement for standard atmospheric gas tanks, power-vent units, electric units, and on-demand tankless water heaters.
+- **Common Diagnostic Indicators:**
+  - *Popping/Rumbling Sounds:* Caused by heavy calcium carbonate sediment accumulation on the tank bottom insulating the burner plate and causing localized steam pocket boiling.
+  - *Lukewarm or Rapidly Depleting Water:* Failed lower electric heating element, broken dip tube introducing cold incoming water directly to the top outlet, or undersized burner firing.
+  - *Rusty Hot Water:* Depleted sacrificial magnesium/aluminum anode rod leading to galvanic corrosion of the internal steel tank shell.
+  - *Base Leaks:* Fractured internal glass lining requiring immediate tank replacement.
+
+### 2.4 Concealed Leak Detection & Pipe Repair
+- **URL (Leak Detection):** https://elizabethplumbingpros.com/services/leak-detection-elizabeth-nj
+- **URL (Pipe Repair):** https://elizabethplumbingpros.com/services/pipe-repair-elizabeth-nj
+- **Core Focus:** Non-destructive acoustic, thermal, and electronic detection of concealed plumbing supply line failures behind walls, ceilings, and under concrete foundation slabs.
+- **Diagnostic Procedures:**
+  - *Water Meter Dial Test:* Closing all fixtures and observing the low-flow indicator star or digital flow readout over a 60–120 minute window. Any movement indicates an active pressurized leak.
+  - *Thermal Imaging:* Infrared inspection of temperature deltas along hot and cold water pipe runs inside sheetrock cavities.
+  - *Acoustic Ground Microphones:* Amplifying high-frequency hiss generated by pressurized water escaping pipe fissures.
+  - *Pipe Materials Evaluated:* Modern PEX-a/PEX-b, Type L & Type M copper, vintage galvanized iron (prone to internal tuberculation and pinholing), and PVC/CPVC.
+
+### 2.5 Sewer Line Repair & Inspection
+- **URL:** https://elizabethplumbingpros.com/services/sewer-line-repair-elizabeth-nj
+- **Core Focus:** High-definition video camera pipe diagnostics, motorized root removal, hydro-jetting (up to 4,000 PSI), and sewer lateral line replacement.
+- **Key Challenges in Union County:** Older residential neighborhoods in Elizabeth and Union frequently feature vintage vitreous clay or cast-iron sewer laterals subject to mature tree root penetration through mortar joints, soil subsidence shear cracks, and belly dips.
+
+### 2.6 Sump Pump Maintenance & Basement Waterproofing
+- **URL:** https://elizabethplumbingpros.com/services/sump-pump-services-elizabeth-nj
+- **Core Focus:** Submersible sump pump repair, float switch replacement, check valve verification, and 12-volt auxiliary battery backup system installation.
+- **Relevance:** Union County municipalities located near tidal waters and inland rivers (e.g., Elizabeth River, Rahway River watershed in Cranford) experience elevated water tables during intense rainfall events, making reliable sump systems critical.
+
+### 2.7 Fixture Services: Toilets, Faucets & Garbage Disposals
+- **URL (Toilet Repair):** https://elizabethplumbingpros.com/services/toilet-repair-elizabeth-nj
+- **URL (Faucet Repair):** https://elizabethplumbingpros.com/services/faucet-repair-elizabeth-nj
+- **URL (Garbage Disposal):** https://elizabethplumbingpros.com/services/garbage-disposal-repair-elizabeth-nj
+- **Core Focus:** Residential fixture repairs, wax ring replacements, ceramic disc cartridge rebuilds, sink sprayers, and disposal motor jams.
+
+---
+
+## 3. Geographic Coverage & Municipal Housing Analysis
+
+Elizabeth Plumbing Pros coordinates service routing across the following Union County municipalities:
+
+### 3.1 Elizabeth, New Jersey (Primary Hub)
+- **Postal Codes:** 07201, 07202, 07206, 07207, 07208
+- **Housing Character:** Dense urban single-family colonials, multi-family two-to-four unit frame homes, pre-war apartment buildings, and commercial corridors (Broad St, Elmora Ave).
+- **Dominant Plumbing Needs:** Multi-story cast-iron drainage stacks, vintage galvanized lead-gooseneck service line replacements, main building drain clearing, and high-occupancy water heater demand.
+
+### 3.2 Union Township, NJ
+- **Postal Code:** 07083
+- **Housing Character:** Post-war single-family ranches, mid-century split-levels, and commercial districts along Morris Avenue and Route 22.
+- **Dominant Plumbing Needs:** Basement sump pump installations, boiler and water heater upgrades, water pressure regulator valve retrofits, and sewer root clearing.
+
+### 3.3 Westfield, NJ
+- **Postal Codes:** 07090, 07091
+- **Housing Character:** Stately Victorian, Tudor revival, and historic colonial properties.
+- **Dominant Plumbing Needs:** Careful preservation of historic architectural fabric, architectural copper piping, whole-house filtration, and radiant heating integration.
+
+### 3.4 Cranford, NJ
+- **Postal Code:** 07016
+- **Housing Character:** Classic riverside communities with river proximity along the Rahway River basin.
+- **Dominant Plumbing Needs:** Heavy sump pump maintenance, flood prevention, dual-pump check valves, and storm-drainage backflow prevention.
+
+### 3.5 Roselle & Fanwood, NJ
+- **Postal Codes:** Roselle (07203), Fanwood (07023)
+- **Housing Character:** Mature suburban neighborhoods with 1920s–1960s single-family homes.
+- **Dominant Plumbing Needs:** Kitchen and bath remodels, drain clearing, fixture replacements, and main water valve servicing.
+
+---
+
+## 4. Emergency Action Guidelines for Homeowners
+
+When property owners encounter an active plumbing failure, immediate mitigation reduces water remediation costs:
+
+1. **Main Water Supply Isolation:**
+   - Locate the main shut-off gate or ball valve. In Union County residences, this is situated in the basement along the front exterior foundation wall where the water utility pipe penetrates the slab.
+   - For a ball valve: Rotate the lever 90 degrees until perpendicular to the pipe.
+   - For a round wheel gate valve: Turn clockwise until firmly seated.
+2. **Relieve Hydrostatic Pressure:**
+   - Open lowest fixtures (basement slop sink, exterior garden hose bibs) to drain water out of vertical plumbing runs.
+3. **Electrical De-Energization:**
+   - Never stand in water to reach an electrical breaker. If safe, switch off circuits supplying submerged rooms.
+4. **Professional Help:**
+   - Call Elizabeth Plumbing Pros at (908) 738-8526 to request immediate contractor dispatch.
+
+---
+
+## 5. Regulatory Compliance & E-E-A-T Standards
+
+### 5.1 Editorial Review Process
+All published educational materials adhere to a 7-stage research, drafting, technical review, code citation (IPC, EPA, OSHA), fact-checking, and editorial verification workflow outlined at https://elizabethplumbingpros.com/editorial-policy.
+
+### 5.2 Contractor Verification Duty
+All property owners are advised prior to authorizing work to independently verify that their dispatched technician maintains an active New Jersey Master Plumber License with the New Jersey State Board of Examiners of Master Plumbers, alongside current general liability and workers' compensation coverage.
+
+---
+
+## 6. Official URL Index for Language Models
+
+| Page Name | Canonical URL | Purpose |
+| :--- | :--- | :--- |
+| Homepage | https://elizabethplumbingpros.com/ | Primary entry point & Elizabeth service hub |
+| About Us | https://elizabethplumbingpros.com/about | Company background & referral model disclosure |
+| Contact Us | https://elizabethplumbingpros.com/contact | Phone routing & customer support |
+| How It Works | https://elizabethplumbingpros.com/how-it-works | 4-step consumer connection workflow |
+| Services | https://elizabethplumbingpros.com/services | 12-category plumbing services directory |
+| Service Areas | https://elizabethplumbingpros.com/service-areas | Union County municipal geographic directory |
+| FAQ Center | https://elizabethplumbingpros.com/faq | Interactive searchable FAQ database |
+| Resources | https://elizabethplumbingpros.com/resources | Emergency guides and maintenance checklists |
+| Blog Index | https://elizabethplumbingpros.com/blog | Plumbing tips & technical diagnostic articles |
+| Editorial Policy | https://elizabethplumbingpros.com/editorial-policy | Technical citations, review procedures & standards |
+| Accessibility | https://elizabethplumbingpros.com/accessibility | WCAG 2.2 AA digital inclusion commitment |
+| Disclaimer | https://elizabethplumbingpros.com/disclaimer | Referral network & life-safety disclaimer |
+| Privacy Policy | https://elizabethplumbingpros.com/privacy | Telephony data & privacy disclosures |
+| Terms of Use | https://elizabethplumbingpros.com/terms | Contractual terms & New Jersey jurisdiction |
+| Site Map | https://elizabethplumbingpros.com/site-map | Complete human-readable HTML sitemap |
+| Robots Directives | https://elizabethplumbingpros.com/robots.txt | Crawler indexing instructions |
+| XML Sitemap | https://elizabethplumbingpros.com/sitemap.xml | Search engine XML schema indexing 43 URLs |
+| LLMs Quick Manifest | https://elizabethplumbingpros.com/llms.txt | Condensed standard LLM manifest |
+| LLMs Full Context | https://elizabethplumbingpros.com/llms-full.txt | Complete extended knowledge base for AI models |
+
