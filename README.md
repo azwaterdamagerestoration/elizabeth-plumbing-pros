@@ -312,7 +312,7 @@ Elizabeth-Plumbing-Pros/
 │   │   ├── analytics.ts        # Google Tag Manager event dispatcher
 │   │   └── seo.ts              # JSON-LD Schema.org generators
 │   └── types/                  # TypeScript interface declarations
-├── next.config.ts              # Next.js configuration, redirects & security headers
+├── next.config.mjs             # Next.js configuration, redirects & security headers
 ├── package.json                # Project dependencies and script definitions
 ├── postcss.config.mjs          # PostCSS configuration for Tailwind CSS v4
 ├── PRE_LAUNCH_QA_REPORT.md     # Comprehensive pre-launch quality assurance report
@@ -325,7 +325,7 @@ Elizabeth-Plumbing-Pros/
 ## Security & Compliance
 
 ### HTTP Security Headers
-Configured directly in `next.config.ts`:
+Configured directly in `next.config.mjs`:
 - **Content-Type Protection:** `X-Content-Type-Options: nosniff`
 - **Clickjacking Defense:** `X-Frame-Options: SAMEORIGIN`
 - **Referrer Privacy:** `Referrer-Policy: strict-origin-when-cross-origin`
