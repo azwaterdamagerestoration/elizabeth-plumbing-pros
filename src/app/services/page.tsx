@@ -29,6 +29,29 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/services`,
   },
+  openGraph: {
+    title: `Plumbing Services Directory | ${siteConfig.name}`,
+    description:
+      "Explore plumbing services in Elizabeth, NJ: drain cleaning, emergency pipe repair, leak detection, water heaters, and sewer solutions. Call (908) 738-8526.",
+    url: `${siteConfig.url}/services`,
+    type: "website",
+    locale: "en_US",
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Plumbing Services Directory | Elizabeth Plumbing Pros",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Plumbing Services Directory | ${siteConfig.name}`,
+    description:
+      "Explore plumbing services in Elizabeth, NJ: drain cleaning, emergency pipe repair, leak detection, water heaters, and sewer solutions. Call (908) 738-8526.",
+  },
 };
 
 const serviceDirectoryFAQs: FAQItem[] = [
@@ -98,7 +121,7 @@ export default function ServicesPage() {
                   className="shadow-md hover:shadow-orange-500/20 text-base"
                 />
                 <span className="text-xs sm:text-sm text-slate-300">
-                  12 Dedicated Service Categories • Fast Dispatch Support
+                  {servicesData.length} Dedicated Service Categories • Fast Dispatch Support
                 </span>
               </div>
             </div>

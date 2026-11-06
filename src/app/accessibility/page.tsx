@@ -10,6 +10,29 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/accessibility`,
   },
+  openGraph: {
+    title: `Accessibility Statement | ${siteConfig.name}`,
+    description:
+      "Review our commitment to digital accessibility, WCAG 2.2 Level AA conformance standards, implemented accessibility features, and contact options.",
+    url: `${siteConfig.url}/accessibility`,
+    type: "website",
+    locale: "en_US",
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Accessibility Statement | Elizabeth Plumbing Pros",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Accessibility Statement | ${siteConfig.name}`,
+    description:
+      "Review our commitment to digital accessibility, WCAG 2.2 Level AA conformance standards, implemented accessibility features, and contact options.",
+  },
 };
 
 const accessibilityTocItems: LegalSectionItem[] = [

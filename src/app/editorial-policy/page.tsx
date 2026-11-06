@@ -10,6 +10,29 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/editorial-policy`,
   },
+  openGraph: {
+    title: `Editorial Policy & Content Standards | ${siteConfig.name}`,
+    description:
+      "Read the editorial standards, technical research protocols, fact-checking procedures, and commercial disclosures for Elizabeth Plumbing Pros.",
+    url: `${siteConfig.url}/editorial-policy`,
+    type: "website",
+    locale: "en_US",
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Editorial Policy | Elizabeth Plumbing Pros",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Editorial Policy & Content Standards | ${siteConfig.name}`,
+    description:
+      "Read the editorial standards, technical research protocols, fact-checking procedures, and commercial disclosures for Elizabeth Plumbing Pros.",
+  },
 };
 
 const editorialTocItems: LegalSectionItem[] = [

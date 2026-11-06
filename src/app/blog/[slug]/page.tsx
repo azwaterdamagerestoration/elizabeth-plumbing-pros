@@ -57,10 +57,12 @@ export async function generateMetadata({
       canonical: canonicalUrl,
     },
     openGraph: {
+      type: "article",
+      locale: "en_US",
+      siteName: siteConfig.name,
       title: post.title,
       description: post.excerpt,
       url: canonicalUrl,
-      type: "article",
       publishedTime: post.publishedDate,
       modifiedTime: post.updatedDate || post.publishedDate,
       authors: [post.author?.name || `${siteConfig.name} Editorial Team`],

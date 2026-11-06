@@ -11,6 +11,29 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/disclaimer`,
   },
+  openGraph: {
+    title: `Service & Information Disclaimer | ${siteConfig.name}`,
+    description:
+      "Read the full business model, referral relationship, and educational content disclaimer for Elizabeth Plumbing Pros in Elizabeth, NJ.",
+    url: `${siteConfig.url}/disclaimer`,
+    type: "website",
+    locale: "en_US",
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Service & Information Disclaimer | Elizabeth Plumbing Pros",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Service & Information Disclaimer | ${siteConfig.name}`,
+    description:
+      "Read the full business model, referral relationship, and educational content disclaimer for Elizabeth Plumbing Pros in Elizabeth, NJ.",
+  },
 };
 
 const disclaimerTocItems: LegalSectionItem[] = [

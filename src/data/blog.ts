@@ -1,10 +1,12 @@
 import { BlogPostItem } from "@/types";
 import { hiddenLeakArticle } from "./blog/signs-of-hidden-plumbing-leak";
+import { additionalBlogPostsData } from "./additionalBlogPosts";
 
 export { hiddenLeakArticle };
 
 export const blogPostsData: BlogPostItem[] = [
   hiddenLeakArticle,
+  ...additionalBlogPostsData,
   {
     id: "what-to-do-when-pipe-bursts",
     slug: "what-to-do-when-pipe-bursts",
@@ -23,7 +25,7 @@ export const blogPostsData: BlogPostItem[] = [
       "Step 1: Shut Off the Main Water Valve Immediately. Every adult in your home should know the exact location of your main water shut-off valve. In Elizabeth homes, this valve is typically located in the basement near the front wall where the municipal line enters the property, or in an access box near the meter. Turn the valve clockwise (or 90 degrees if it is a ball lever) until water stops flowing.",
       "Step 2: Relieve Line Pressure. Open the cold water faucets in your lowest fixtures (like a basement wash tub or laundry sink) and outdoors to drain the remaining water sitting in vertical pipe runs.",
       "Step 3: Manage Electrical Safety. Never walk into standing water if electrical outlets or appliances are submerged. Switch off the main breaker switch or affected sub-panels from a dry area.",
-      "Step 4: Contact a Local Professional. Call (908) 738-8526 to request prompt plumbing repair assistance and begin documenting water damage for your homeowner's insurance claim.",
+      "Step 4: Contact a Local Professional. Call (908) 738-8526 to request prompt plumbing repair assistance, coordinate with certified [water damage restoration](https://azwaterdamagerestoration.com/) specialists to initiate rapid structural drying, and begin documenting water damage for your homeowner's insurance claim.",
     ],
   },
   {
@@ -43,7 +45,7 @@ export const blogPostsData: BlogPostItem[] = [
       "Sluggish drains are among the most frequent plumbing nuisances in Union County homes. While reaching for caustic chemical drain cleaners is a common impulse, those harsh chemicals often corrode older metal pipes and release toxic fumes without permanently clearing the blockage.",
       "Understanding Drain Culprits: Kitchen drains primarily suffer from FOG (Fats, Oils, and Grease). Even when rinsed down with warm water, cooking fats cool down inside horizontal pipe runs, adhering to pipe walls and catching food particles. Bathroom sinks and showers, conversely, face a combination of shedding hair, soap scum, and toothpaste binding together.",
       "Best Practices for Prevention: Install inexpensive mesh drain catchers in every shower and tub. Never pour liquid cooking oils or bacon grease into the sink; instead, let them cool in a can and discard in the trash. Flush drains weekly with hot boiling water followed by a baking soda and vinegar rinse to naturally break down minor surface build-up.",
-      "When to Seek Help: If multiple fixtures gurgle or drain slowly at the same time, the restriction is likely inside your home's main building drain or sewer line, which requires mechanical snaking or hydro-jetting.",
+      "When to Seek Help: If multiple fixtures gurgle or drain slowly at the same time, the restriction is likely inside your home's main building drain or sewer line, which requires mechanical snaking, hydro-jetting, or specialized [plumbing and drain cleaning](https://spectrumplumbingirvine.com/) evaluation to prevent sewage backups.",
     ],
   },
   {
@@ -61,7 +63,7 @@ export const blogPostsData: BlogPostItem[] = [
     image: "/images/blog/water-heater-inspection.webp",
     content: [
       "A residential water heater is the unsung workhorse of any household, continuously supplying hot water for showers, dishwashing, and laundry. Most standard tank heaters provide dependable operation for 8 to 12 years. Recognizing subtle warning signs allows you to schedule repairs before waking up to an icy shower or flooded basement.",
-      "Key Indicator 1: Inconsistent or Lukewarm Water. If your hot water runs out halfway through a normal shower, either the lower heating element in an electric unit has failed, or excessive sediment has insulated the burner plate in a gas unit.",
+      "Key Indicator 1: Inconsistent or Lukewarm Water. If your hot water runs out halfway through a normal shower, either the lower heating element in an electric unit has failed, or excessive sediment has insulated the burner plate in a gas unit, signaling that specialized [water heater services](https://longbeachwaterheaterservices.com/) are needed to restore thermal efficiency.",
       "Key Indicator 2: Popping, Rumbling, or Clanking Sounds. As hard water minerals settle to the bottom of the tank, water gets trapped underneath the sediment layer. When the burner fires, this trapped water boils violently into steam pockets, creating audible cracking or rumbling noises.",
       "Key Indicator 3: Discolored Water or Rusty Odors. Rust-tinted water coming exclusively from hot faucets often indicates that your sacrificial anode rod has fully depleted and the steel tank itself has begun oxidizing from the inside out.",
       "Key Indicator 4: Moisture or Drips Around the Unit. Any visible pooling of water around the base of the heater demands immediate attention. While it could be a simple temperature and pressure relief valve leak, tank fractures cannot be repaired and require unit replacement.",

@@ -11,6 +11,29 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/privacy`,
   },
+  openGraph: {
+    title: `Privacy Policy | ${siteConfig.name}`,
+    description:
+      "Learn how Elizabeth Plumbing Pros collects, uses, protects, and relays personal information submitted through our website and telephone referral network.",
+    url: `${siteConfig.url}/privacy`,
+    type: "website",
+    locale: "en_US",
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Privacy Policy | Elizabeth Plumbing Pros",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Privacy Policy | ${siteConfig.name}`,
+    description:
+      "Learn how Elizabeth Plumbing Pros collects, uses, protects, and relays personal information submitted through our website and telephone referral network.",
+  },
 };
 
 const privacyTocItems: LegalSectionItem[] = [

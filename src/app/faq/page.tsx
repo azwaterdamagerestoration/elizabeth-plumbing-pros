@@ -12,6 +12,29 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/faq`,
   },
+  openGraph: {
+    title: `Frequently Asked Questions | ${siteConfig.name}`,
+    description:
+      "Find answers to common plumbing questions in Elizabeth, NJ: emergency leak steps, drain snaking vs hydro-jetting, water heaters, and service connection details.",
+    url: `${siteConfig.url}/faq`,
+    type: "website",
+    locale: "en_US",
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Frequently Asked Questions | Elizabeth Plumbing Pros",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Frequently Asked Questions | ${siteConfig.name}`,
+    description:
+      "Find answers to common plumbing questions in Elizabeth, NJ: emergency leak steps, drain snaking vs hydro-jetting, water heaters, and service connection details.",
+  },
 };
 
 export default function FAQPage() {

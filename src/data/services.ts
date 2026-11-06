@@ -1,6 +1,7 @@
 import { ServiceItem } from "@/types";
+import { additionalServicesData } from "./additionalServices";
 
-export const servicesData: ServiceItem[] = [
+const initialServicesData: ServiceItem[] = [
   {
     "id": "emergency-plumbing-elizabeth-nj",
     "slug": "emergency-plumbing-elizabeth-nj",
@@ -3798,4 +3799,9 @@ export const servicesData: ServiceItem[] = [
       "what-to-do-when-pipe-bursts"
     ]
   }
+];
+
+export const servicesData: ServiceItem[] = [
+  ...initialServicesData,
+  ...additionalServicesData,
 ];

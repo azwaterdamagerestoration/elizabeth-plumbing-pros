@@ -32,6 +32,29 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/contact`,
   },
+  openGraph: {
+    title: `Contact Us | Plumbing Service Inquiries | ${siteConfig.name}`,
+    description:
+      "Have a plumbing concern in Elizabeth or nearby Union County? Call (908) 738-8526 or submit an inquiry to discuss your plumbing needs and available service options.",
+    url: `${siteConfig.url}/contact`,
+    type: "website",
+    locale: "en_US",
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Contact Us | Elizabeth Plumbing Pros",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Contact Us | Plumbing Service Inquiries | ${siteConfig.name}`,
+    description:
+      "Have a plumbing concern in Elizabeth or nearby Union County? Call (908) 738-8526 or submit an inquiry to discuss your plumbing needs and available service options.",
+  },
 };
 
 const contactFAQs: FAQItem[] = [

@@ -32,6 +32,17 @@ const validRoutes = new Set([
   "/blog/signs-of-hidden-plumbing-leak",
   "/blog/signs-water-heater-needs-repair",
   "/blog/what-to-do-when-pipe-bursts",
+  "/blog/sewer-lateral-responsibility-nj",
+  "/blog/hydro-jetting-vs-snaking",
+  "/blog/trenchless-sewer-repair-vs-traditional-digging",
+  "/blog/concrete-slab-leak-symptoms-repair",
+  "/blog/galvanized-pipes-vs-copper-vs-pex",
+  "/blog/pseg-gas-red-tag-meaning-steps",
+  "/blog/tankless-vs-tank-water-heaters-nj",
+  "/blog/why-sump-pump-running-constantly",
+  "/blog/do-you-need-water-softener-union-county",
+  "/blog/commercial-kitchen-grease-trap-regulations-nj",
+  "/blog/why-annual-backflow-testing-notice-nj",
   // Locations
   "/locations/plumber-cranford-nj",
   "/locations/plumber-fanwood-nj",
@@ -51,6 +62,15 @@ const validRoutes = new Set([
   "/services/toilet-repair-elizabeth-nj",
   "/services/water-heater-installation-elizabeth-nj",
   "/services/water-heater-repair-elizabeth-nj",
+  "/services/water-softener-installation-elizabeth-nj",
+  "/services/gas-line-repair-elizabeth-nj",
+  "/services/slab-leak-detection-elizabeth-nj",
+  "/services/copper-repiping-elizabeth-nj",
+  "/services/hydro-jetting-elizabeth-nj",
+  "/services/trenchless-sewer-repair-elizabeth-nj",
+  "/services/kitchen-bathroom-plumbing-elizabeth-nj",
+  "/services/commercial-plumbing-elizabeth-nj",
+  "/services/backflow-testing-prevention-elizabeth-nj",
 ]);
 
 // Redirect routes
@@ -184,6 +204,32 @@ for (const filePath of htmlFiles) {
     }
   } else if (route !== "/_not-found") {
     pageReport.warnings.push("Missing canonical link");
+  }
+
+  // 3b. OpenGraph Protocol Validation (ogp.me standards)
+  if (route !== "/_not-found") {
+    const ogTypeMatch = html.match(/<meta[^>]+property=["']og:type["'][^>]+content=["']([^"']*)["']/i);
+    const ogUrlMatch = html.match(/<meta[^>]+property=["']og:url["'][^>]+content=["']([^"']*)["']/i);
+    const ogTitleMatch = html.match(/<meta[^>]+property=["']og:title["'][^>]+content=["']([^"']*)["']/i);
+    const ogImageMatch = html.match(/<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']*)["']/i);
+
+    if (!ogTypeMatch) {
+      pageReport.errors.push("Missing required OpenGraph property: og:type");
+    }
+    if (!ogTitleMatch) {
+      pageReport.errors.push("Missing required OpenGraph property: og:title");
+    }
+    if (!ogImageMatch) {
+      pageReport.errors.push("Missing required OpenGraph property: og:image");
+    }
+    if (ogUrlMatch && pageReport.canonical) {
+      const ogUrl = ogUrlMatch[1].trim();
+      if (ogUrl !== pageReport.canonical) {
+        pageReport.errors.push(`OpenGraph URL (${ogUrl}) does not match Canonical URL (${pageReport.canonical})`);
+      }
+    } else if (!ogUrlMatch) {
+      pageReport.errors.push("Missing required OpenGraph property: og:url");
+    }
   }
 
   // 4. H1 Tag

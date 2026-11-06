@@ -29,6 +29,29 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/about`,
   },
+  openGraph: {
+    title: `About Us | Plumbing Service Information | ${siteConfig.name}`,
+    description:
+      "Learn about Elizabeth Plumbing Pros, our focus on plumbing service information, and how we help visitors explore plumbing assistance in Elizabeth, NJ and nearby areas.",
+    url: `${siteConfig.url}/about`,
+    type: "website",
+    locale: "en_US",
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "About Us | Elizabeth Plumbing Pros",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `About Us | Plumbing Service Information | ${siteConfig.name}`,
+    description:
+      "Learn about Elizabeth Plumbing Pros, our focus on plumbing service information, and how we help visitors explore plumbing assistance in Elizabeth, NJ and nearby areas.",
+  },
 };
 
 export default function AboutPage() {

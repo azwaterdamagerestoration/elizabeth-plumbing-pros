@@ -11,6 +11,29 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/terms`,
   },
+  openGraph: {
+    title: `Terms of Use | ${siteConfig.name}`,
+    description:
+      "Review the terms, agreements, independent contractor disclaimers, and user obligations governing the Elizabeth Plumbing Pros platform.",
+    url: `${siteConfig.url}/terms`,
+    type: "website",
+    locale: "en_US",
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Terms of Use | Elizabeth Plumbing Pros",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Terms of Use | ${siteConfig.name}`,
+    description:
+      "Review the terms, agreements, independent contractor disclaimers, and user obligations governing the Elizabeth Plumbing Pros platform.",
+  },
 };
 
 const termsTocItems: LegalSectionItem[] = [

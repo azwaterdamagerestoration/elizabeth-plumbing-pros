@@ -94,7 +94,7 @@ export const hiddenLeakArticle: BlogPostItem = {
           heading: "3. Discolored, Blistering, or Peeling Drywall and Ceilings",
           paragraphs: [
             "Standard residential gypsum board (drywall) absorbs water like a sponge. When a concealed supply line or drain coupling weeps behind sheetrock, the moisture migrates through the porous gypsum core toward the painted exterior surface.",
-            "Initial indicators include light tan or yellowish ring stains, soft spongy spots that indent under light thumb pressure, or paint that bubbles and blisters away from the drywall paper backing. If you observe dark brown halos or sagging plaster around light fixtures, immediate action is required to avoid ceiling collapse.",
+            "Initial indicators include light tan or yellowish ring stains, soft spongy spots that indent under light thumb pressure, or paint that bubbles and blisters away from the drywall paper backing. If you observe dark brown halos or sagging plaster around light fixtures, immediate action is required to avoid ceiling collapse. When staining appears on upper-story ceilings directly beneath rooflines or plumbing vent penetrations, homeowners must verify whether the moisture originates from pipe joints or compromised chimney and vent boot flashing inspected by a [certified roofing contractor](https://bridgewaterroofer.com/).",
           ],
         },
         {
@@ -233,7 +233,7 @@ export const hiddenLeakArticle: BlogPostItem = {
       id: "when-to-contact-professional",
       heading: "When to Contact a Plumbing Professional",
       paragraphs: [
-        "While routine fixture adjustments and toilet flapper replacements are manageable homeowner tasks, attempting to locate and repair concealed pipe leaks behind drywall or beneath concrete slabs requires commercial-grade diagnostic equipment and licensed expertise.",
+        "While routine fixture adjustments and toilet flapper replacements are manageable homeowner tasks, attempting to locate and repair concealed pipe leaks behind drywall or beneath concrete slabs requires commercial-grade diagnostic equipment and licensed expertise. Partnering with experienced providers of [professional plumbing services](https://aquavoplumbing.com/) ensures non-invasive pinpoint acoustic location and durable code-compliant repairs before water undermines structural framing.",
         "Contact an experienced local plumbing professional immediately if you experience any of the following conditions:",
       ],
       bullets: [

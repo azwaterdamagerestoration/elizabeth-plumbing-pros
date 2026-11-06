@@ -15,6 +15,29 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/blog`,
   },
+  openGraph: {
+    title: `Plumbing Tips & Homeowner Guides | ${siteConfig.name}`,
+    description:
+      "Practical plumbing articles, leak diagnostic protocols, burst pipe emergency steps, drain cleaning advice, and water heater maintenance for Elizabeth, NJ residents.",
+    url: `${siteConfig.url}/blog`,
+    type: "website",
+    locale: "en_US",
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Plumbing Tips & Homeowner Guides | Elizabeth Plumbing Pros",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Plumbing Tips & Homeowner Guides | ${siteConfig.name}`,
+    description:
+      "Practical plumbing articles, leak diagnostic protocols, burst pipe emergency steps, drain cleaning advice, and water heater maintenance for Elizabeth, NJ residents.",
+  },
 };
 
 export default function BlogPage() {

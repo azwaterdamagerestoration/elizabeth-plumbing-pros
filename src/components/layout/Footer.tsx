@@ -74,7 +74,7 @@ export function Footer() {
                   href="/services"
                   className="text-xs font-bold text-[#23B8D4] hover:underline block pt-1"
                 >
-                  View All 12 Services &rsaquo;
+                  View All Services &rsaquo;
                 </Link>
               </li>
             </ul>

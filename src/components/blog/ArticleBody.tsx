@@ -1,9 +1,57 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { CheckCircle2 } from "lucide-react";
 import { BlogSection } from "@/types";
 import { EditorialCallout } from "./EditorialCallout";
 import { ComparisonTable } from "./ComparisonTable";
+
+function renderTextWithLinks(text: string): React.ReactNode {
+  const parts: (string | React.ReactNode)[] = [];
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.substring(lastIndex, match.index));
+    }
+    const label = match[1];
+    const href = match[2];
+    const isInternal = href.startsWith("/") || href.startsWith("#");
+
+    if (isInternal) {
+      parts.push(
+        <Link
+          key={`${match.index}-${href}`}
+          href={href}
+          className="font-semibold text-[#1677C8] hover:text-[#0D5494] underline decoration-blue-200 underline-offset-2 hover:decoration-[#1677C8] transition-colors"
+        >
+          {label}
+        </Link>
+      );
+    } else {
+      parts.push(
+        <a
+          key={`${match.index}-${href}`}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-[#1677C8] hover:text-[#0D5494] underline decoration-blue-200 underline-offset-2 hover:decoration-[#1677C8] transition-colors"
+        >
+          {label}
+        </a>
+      );
+    }
+    lastIndex = regex.lastIndex;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex));
+  }
+
+  return parts.length > 0 ? parts : text;
+}
 
 interface ArticleBodyProps {
   sections?: BlogSection[];
@@ -23,7 +71,7 @@ export function ArticleBody({
     return (
       <div className={`space-y-6 text-base sm:text-lg text-[#172B45] leading-relaxed ${className}`}>
         {legacyContent.map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
+          <p key={index}>{renderTextWithLinks(paragraph)}</p>
         ))}
       </div>
     );
@@ -41,7 +89,7 @@ export function ArticleBody({
           {/* Section Paragraphs */}
           <div className="space-y-4 text-base sm:text-lg text-[#172B45] leading-[1.75]">
             {section.paragraphs.map((p, idx) => (
-              <p key={idx}>{p}</p>
+              <p key={idx}>{renderTextWithLinks(p)}</p>
             ))}
           </div>
 
@@ -52,7 +100,7 @@ export function ArticleBody({
                 <li key={idx} className="flex items-start gap-3">
                   <CheckCircle2 className="w-5 h-5 text-[#1677C8] shrink-0 mt-0.5" aria-hidden="true" />
                   <span className="text-base sm:text-lg text-[#172B45] leading-relaxed">
-                    {bullet}
+                    {renderTextWithLinks(bullet)}
                   </span>
                 </li>
               ))}
@@ -100,7 +148,7 @@ export function ArticleBody({
 
                   <div className="space-y-4 text-base sm:text-lg text-[#172B45] leading-[1.75]">
                     {sub.paragraphs.map((p, idx) => (
-                      <p key={idx}>{p}</p>
+                      <p key={idx}>{renderTextWithLinks(p)}</p>
                     ))}
                   </div>
 
@@ -110,7 +158,7 @@ export function ArticleBody({
                         <li key={idx} className="flex items-start gap-2.5">
                           <CheckCircle2 className="w-4 h-4 text-[#23B8D4] shrink-0 mt-1" aria-hidden="true" />
                           <span className="text-sm sm:text-base text-[#172B45] leading-relaxed">
-                            {bullet}
+                            {renderTextWithLinks(bullet)}
                           </span>
                         </li>
                       ))}

@@ -23,6 +23,29 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/site-map`,
   },
+  openGraph: {
+    title: `HTML Site Map & Directory | ${siteConfig.name}`,
+    description:
+      "Complete directory of all pages, plumbing services, regional Union County service areas, homeowner guides, and legal policies on Elizabeth Plumbing Pros.",
+    url: `${siteConfig.url}/site-map`,
+    type: "website",
+    locale: "en_US",
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "HTML Site Map & Directory | Elizabeth Plumbing Pros",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `HTML Site Map & Directory | ${siteConfig.name}`,
+    description:
+      "Complete directory of all pages, plumbing services, regional Union County service areas, homeowner guides, and legal policies on Elizabeth Plumbing Pros.",
+  },
 };
 
 export default function HTMLSitemapPage() {

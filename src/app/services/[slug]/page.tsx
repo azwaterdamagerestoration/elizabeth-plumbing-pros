@@ -47,6 +47,9 @@ export async function generateMetadata({
       canonical: canonicalUrl,
     },
     openGraph: {
+      type: "website",
+      locale: "en_US",
+      siteName: siteConfig.name,
       title: metaTitle,
       description: metaDescription,
       url: canonicalUrl,

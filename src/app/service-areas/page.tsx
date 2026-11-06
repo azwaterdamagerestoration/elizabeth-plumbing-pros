@@ -26,6 +26,29 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteConfig.url}/service-areas`,
   },
+  openGraph: {
+    title: `Plumbing Service Areas Near Elizabeth, NJ | ${siteConfig.name}`,
+    description:
+      "Explore plumbing service coverage across Elizabeth, Union, Westfield, Cranford, Roselle, and Fanwood in Union County, NJ. Call (908) 738-8526.",
+    url: `${siteConfig.url}/service-areas`,
+    type: "website",
+    locale: "en_US",
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: `${siteConfig.url}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Plumbing Service Areas | Elizabeth Plumbing Pros",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Plumbing Service Areas Near Elizabeth, NJ | ${siteConfig.name}`,
+    description:
+      "Explore plumbing service coverage across Elizabeth, Union, Westfield, Cranford, Roselle, and Fanwood in Union County, NJ. Call (908) 738-8526.",
+  },
 };
 
 const serviceAreaFAQs: FAQItem[] = [
