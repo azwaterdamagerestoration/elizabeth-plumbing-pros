@@ -1,36 +1,36 @@
 import React from "react";
-import { MapPin, Wrench, ShieldAlert, Flame } from "lucide-react";
+import { MapPin, ShieldAlert, Droplets, Flame } from "lucide-react";
 import { Container } from "@/shared/Container";
 
 const highlights = [
   {
     icon: MapPin,
-    title: "Local Elizabeth Coverage",
-    description: "Assisting Elizabethport, Elmora, Midtown & neighboring Union County towns.",
+    title: "Local Plumber Near You",
+    description: "Vetted local plumbers serving Elizabethport, Elmora, Midtown, Peterstown & Union County.",
     iconColor: "text-[#1677C8]",
     bgColor: "bg-blue-50/80",
     borderAccent: "border-blue-100",
   },
   {
-    icon: Wrench,
-    title: "Plumbing Repair Help",
-    description: "Support for pipe leaks, fixture issues, running toilets, and shut-off valves.",
+    icon: ShieldAlert,
+    title: "24/7 Emergency Plumbing",
+    description: "Urgent dispatch for burst pipes, severe sewage backups, running leaks, and same day plumbing repair.",
     iconColor: "text-[#FF8533]",
     bgColor: "bg-orange-50/80",
     borderAccent: "border-orange-100",
   },
   {
-    icon: ShieldAlert,
-    title: "Drain & Sewer Services",
-    description: "Assistance with stubborn clogs, main line sewer backups, and slow drains.",
+    icon: Droplets,
+    title: "Drain Cleaning & Sewer Line",
+    description: "Rooter cabling, camera diagnostics, hydro-jetting, and non-invasive trenchless sewer repairs.",
     iconColor: "text-[#23B8D4]",
     bgColor: "bg-cyan-50/80",
     borderAccent: "border-cyan-100",
   },
   {
     icon: Flame,
-    title: "Water Heater Services",
-    description: "Solutions for leaking tanks, loss of hot water, and system replacements.",
+    title: "Water Heaters & Plumbing Supply",
+    description: "Diagnostics, element replacement, and system installs with commercial-grade plumbing supply parts.",
     iconColor: "text-[#102B4E]",
     bgColor: "bg-slate-100/80",
     borderAccent: "border-slate-200",

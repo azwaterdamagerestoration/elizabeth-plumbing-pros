@@ -16,9 +16,9 @@ interface ServiceAreasProps {
 }
 
 export function ServiceAreas({
-  eyebrow = "LOCAL COVERAGE",
-  title = "Plumbing Services in Elizabeth and Nearby Communities",
-  description = "Explore plumbing service information for Elizabeth and surrounding Union County communities.",
+  eyebrow = "LOCAL UNION COUNTY COVERAGE",
+  title = "Plumbers Serving Elizabeth, NJ & Surrounding Communities",
+  description = "Connect with licensed local plumbing contractors across all Elizabeth neighborhoods and surrounding Union County municipalities.",
   className = "",
 }: ServiceAreasProps = {}) {
   return (
@@ -108,9 +108,9 @@ export function ServiceAreas({
               <ShieldCheck className="w-4 h-4" />
               <span>Union County Wide Dispatch</span>
             </div>
-            <h4 className="font-extrabold text-white text-xl">
+            <h3 className="font-extrabold text-white text-xl">
               Need assistance in another Union County neighborhood?
-            </h4>
+            </h3>
             <p className="text-sm text-slate-300">
               Call directly to inquire about contractor service boundaries and technician availability.
             </p>

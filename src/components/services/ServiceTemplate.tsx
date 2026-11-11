@@ -87,6 +87,25 @@ export function ServiceTemplate({
         eyebrow="SIMPLE 3-STEP PROCESS"
         title={`How Getting ${service.title} Help Works`}
         description={`A straightforward phone connection process to coordinate residential ${service.title.toLowerCase()} support in Elizabeth, NJ.`}
+        steps={[
+          {
+            number: "01",
+            title: `Call ${siteConfig.phone.display}`,
+            description: `Speak with our local phone team and describe the ${service.title.toLowerCase()} symptoms, fixture location, or issue at your property.`,
+          },
+          {
+            number: "02",
+            title: "Confirm Location & Urgency",
+            description:
+              "Confirm your Elizabeth or Union County neighborhood and let us know whether the situation requires urgent triage or routine scheduling.",
+          },
+          {
+            number: "03",
+            title: "Connect With Local Professionals",
+            description:
+              "Connect with an independent local plumbing professional to discuss on-site diagnosis, written estimate options, and code-compliant work.",
+          },
+        ]}
       />
 
       {/* 7. Service Benefits (Reused Asymmetric WhyChooseUs) */}
@@ -116,6 +135,8 @@ export function ServiceTemplate({
           checklistItems={service.urgentHelp.urgencyChecklist}
           safetyTitle={service.urgentHelp.safetyTip.title}
           safetyText={service.urgentHelp.safetyTip.text}
+          image={service.image}
+          imageAlt={`Urgent ${service.title.toLowerCase()} considerations in Elizabeth, NJ`}
           promptBadge="Direct Phone Dispatch"
           promptText={`Call ${siteConfig.phone.display} to discuss immediate repair availability.`}
         />

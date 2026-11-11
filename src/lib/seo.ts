@@ -9,10 +9,16 @@ export function generateOrganizationSchema() {
     url: siteConfig.url,
     telephone: siteConfig.phone.raw,
     description: siteConfig.businessModel.description,
-    areaServed: {
-      "@type": "AdministrativeArea",
-      name: `${siteConfig.primaryLocation.city}, ${siteConfig.primaryLocation.stateAbbr}`,
-    },
+    areaServed: [
+      {
+        "@type": "City",
+        name: `${siteConfig.primaryLocation.city}, ${siteConfig.primaryLocation.stateAbbr}`,
+      },
+      {
+        "@type": "AdministrativeArea",
+        name: `${siteConfig.primaryLocation.county}, ${siteConfig.primaryLocation.stateAbbr}`,
+      },
+    ],
   };
 }
 
@@ -99,6 +105,12 @@ export function generateFAQSchema(faqs: FAQItem[]) {
 }
 
 export function generateServiceSchema(service: ServiceItem) {
+  const imageUrl = service.image
+    ? service.image.startsWith("http")
+      ? service.image
+      : `${siteConfig.url}${service.image}`
+    : undefined;
+
   return {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -110,10 +122,18 @@ export function generateServiceSchema(service: ServiceItem) {
       telephone: siteConfig.phone.raw,
       url: siteConfig.url,
     },
-    areaServed: {
-      "@type": "AdministrativeArea",
-      name: `${siteConfig.primaryLocation.city}, ${siteConfig.primaryLocation.stateAbbr}`,
-    },
+    areaServed: [
+      {
+        "@type": "City",
+        name: `${siteConfig.primaryLocation.city}, ${siteConfig.primaryLocation.stateAbbr}`,
+      },
+      {
+        "@type": "AdministrativeArea",
+        name: `${siteConfig.primaryLocation.county}, ${siteConfig.primaryLocation.stateAbbr}`,
+      },
+    ],
+    url: `${siteConfig.url}/services/${service.slug}`,
+    ...(imageUrl ? { image: imageUrl } : {}),
     description: service.shortDescription,
   };
 }

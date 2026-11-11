@@ -9,14 +9,22 @@ interface FinalCTAProps {
   title?: string;
   description?: string;
   buttonLabel?: string;
+  trustPoints?: string[];
   className?: string;
 }
 
+const defaultTrustPoints = [
+  "Serving All Elizabeth Neighborhoods & Union County",
+  "Local Telephone Referral Coordination",
+  "Independent Local Plumbing Professionals",
+];
+
 export function FinalCTA({
-  eyebrow = "UNION COUNTY PLUMBING CONNECTIONS",
-  title = "Need Plumbing Help in Elizabeth, NJ?",
-  description = "Call Elizabeth Plumbing Pros to discuss your plumbing problem and available service options. Speak directly with an agent to coordinate residential assistance.",
+  eyebrow = "24/7 LOCAL PLUMBERS READY TO HELP",
+  title = "Connect With a Trusted Plumber in Elizabeth, NJ Right Now",
+  description = "Don't let a burst pipe, stubborn drain clog, or failing water heater disrupt your home or commercial property. Call Elizabeth Plumbing Pros at (908) 738-8526 to speak directly with our dispatch team and schedule fast, reliable plumbing services.",
   buttonLabel,
+  trustPoints = defaultTrustPoints,
   className = "",
 }: FinalCTAProps = {}) {
   return (
@@ -42,21 +50,19 @@ export function FinalCTA({
           <CallButton
             size="lg"
             variant="primary"
-            label={buttonLabel || `CALL ${siteConfig.phone.display}`}
+            label={buttonLabel || `CALL ${siteConfig.phone.display} NOW`}
             trackingEvent="final_cta_call_click"
             className="w-full sm:w-auto shadow-2xl hover:shadow-[#FF8533]/40 font-extrabold text-lg px-9 py-4 uppercase tracking-wide"
           />
         </div>
 
         <div className="pt-6 border-t border-slate-800/80 flex flex-wrap items-center justify-center gap-6 text-xs sm:text-sm text-slate-400">
-          <div className="flex items-center gap-2">
-            <CheckCircle2 className="w-4 h-4 text-[#23B8D4]" />
-            <span>Serving Elizabeth &amp; Nearby Union County Towns</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <CheckCircle2 className="w-4 h-4 text-[#23B8D4]" />
-            <span>Direct Phone Coordination</span>
-          </div>
+          {trustPoints.map((point) => (
+            <div key={point} className="flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 text-[#23B8D4]" />
+              <span>{point}</span>
+            </div>
+          ))}
         </div>
       </Container>
     </section>

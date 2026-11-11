@@ -19,6 +19,11 @@ import { EmergencySection } from "@/components/home/EmergencySection";
 import { HowItWorks } from "@/components/home/HowItWorks";
 import { FAQSection } from "@/components/home/FAQSection";
 import { FinalCTA } from "@/components/home/FinalCTA";
+import {
+  generateWebPageSchema,
+  generateBreadcrumbSchema,
+  generateFAQSchema,
+} from "@/lib/seo";
 import { siteConfig } from "@/config/site";
 import { FAQItem } from "@/types";
 
@@ -82,8 +87,28 @@ const serviceDirectoryFAQs: FAQItem[] = [
 ];
 
 export default function ServicesPage() {
+  const webPageSchema = generateWebPageSchema(
+    `Plumbing Services Directory | ${siteConfig.name}`,
+    "Explore plumbing services in Elizabeth, NJ: drain cleaning, emergency pipe repair, leak detection, water heaters, and sewer solutions. Call (908) 738-8526.",
+    "/services"
+  );
+  const breadcrumbSchema = generateBreadcrumbSchema([{ label: "Services" }]);
+  const faqSchema = generateFAQSchema(serviceDirectoryFAQs);
+
   return (
     <div className="bg-white min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* SECTION 1 — HERO */}
       <section className="bg-gradient-to-b from-[#080F1F] via-[#0B172D] to-[#102B4E] text-white pt-8 pb-14 sm:pb-20 relative overflow-hidden">
         <div
@@ -183,7 +208,7 @@ export default function ServicesPage() {
                     </p>
 
                     <div className="mt-5 pt-4 border-t border-slate-100 space-y-2">
-                      <span className="text-[11px] font-extrabold uppercase tracking-wider text-slate-400 block">
+                      <span className="text-[11px] font-extrabold uppercase tracking-wider text-[#5D6B7C] block">
                         Included Solutions:
                       </span>
                       <ul className="space-y-1.5 text-xs text-[#5D6B7C]">

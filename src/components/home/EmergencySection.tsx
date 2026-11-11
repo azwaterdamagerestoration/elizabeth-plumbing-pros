@@ -6,11 +6,12 @@ import { CallButton } from "@/shared/CallButton";
 import { Container } from "@/shared/Container";
 
 const emergencyProblems = [
-  "Burst and Freezing Water Supply Pipes",
-  "Major Active Indoor Leaks Behind Walls",
-  "Overflowing Toilets and Fixture Backups",
-  "Main Sewer Line Backups & Foul Odors",
-  "Completely Blocked Primary Branch Drains",
+  "Burst water supply lines and freezing indoor copper or PEX pipes",
+  "Raw sewage backing up from main sewer lines and basement floor drains",
+  "Overflowing toilets and cascading ceiling leaks threatening drywall",
+  "Catastrophic water heater tank ruptures flooding utility basements",
+  "Sudden loss of water pressure or suspected underground slab leaks",
+  "Commercial plumbing emergencies threatening retail or restaurant operations",
 ];
 
 interface EmergencySectionProps {
@@ -29,17 +30,17 @@ interface EmergencySectionProps {
 }
 
 export function EmergencySection({
-  eyebrow = "URGENT PLUMBING ASSISTANCE",
-  title = "Facing an Urgent Plumbing Problem in Elizabeth?",
-  description = "Severe leaks, burst pipes, overflowing fixtures, and sewer backups can cause catastrophic property damage within minutes. Call immediately to discuss your plumbing emergency and connect with available service options.",
-  checklistTitle = "Urgent Concerns Visitors Frequently Discuss:",
+  eyebrow = "24/7 EMERGENCY PLUMBER IN ELIZABETH, NJ",
+  title = "Need an Emergency Plumber Near Me for Immediate Dispatch?",
+  description = "When severe pipe fractures, frozen water lines, raw sewage backups, or cascading fixture leaks strike your home or business, minutes matter. Elizabeth Plumbing Pros connects you directly with a 24 hour plumber near me in Elizabeth, NJ for fast, reliable emergency plumbing services 24/7.",
+  checklistTitle = "Urgent Plumbing Crises Frequently Handled:",
   checklistItems: customChecklist,
-  safetyTitle = "Recommended Safety Precaution:",
-  safetyText = "If safe to do so, locate and shut off the affected fixture valve or your home's main water shut-off valve to limit damage while arranging assistance.",
+  safetyTitle = "Critical Emergency Water Shut-Off Precaution:",
+  safetyText = "If safe to access, immediately shut off your property's main water shut-off valve to halt active flooding while an emergency plumber is dispatched. If water reaches electrical outlets or panel boxes, do not walk through standing water—switch off breakers first.",
   image = "/images/home/emergency-pipe-repair.webp",
-  imageAlt = "Plumbing technician using wrench to repair leaking residential pipe in Elizabeth, NJ",
-  promptBadge = "Prompt Phone Dispatch Support",
-  promptText = `Call ${siteConfig.phone.display} to discuss immediate repair availability.`,
+  imageAlt = "Licensed emergency plumber repairing burst water pipe in Elizabeth, NJ",
+  promptBadge = "24/7 Rapid Emergency Dispatch",
+  promptText = `Call ${siteConfig.phone.display} for immediate emergency plumber assistance in Elizabeth, NJ.`,
   className = "",
 }: EmergencySectionProps = {}) {
   const activeChecklist = customChecklist || emergencyProblems;

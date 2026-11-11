@@ -37,6 +37,9 @@ export async function generateMetadata({
     `${service.title} in Elizabeth, NJ | Elizabeth Plumbing Pros`;
   const metaDescription = service.metaDescription || service.shortDescription;
   const canonicalUrl = `${siteConfig.url}/services/${service.slug}`;
+  const ogImageUrl = service.image.startsWith("http")
+    ? service.image
+    : `${siteConfig.url}${service.image}`;
 
   return {
     title: {
@@ -55,7 +58,7 @@ export async function generateMetadata({
       url: canonicalUrl,
       images: [
         {
-          url: service.image,
+          url: ogImageUrl,
           alt: `${service.title} in Elizabeth, NJ`,
           width: 1200,
           height: 675,
@@ -66,7 +69,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: metaTitle,
       description: metaDescription,
-      images: [service.image],
+      images: [ogImageUrl],
     },
   };
 }

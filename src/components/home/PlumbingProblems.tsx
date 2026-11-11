@@ -15,9 +15,9 @@ export function PlumbingProblems() {
     <section className="py-20 sm:py-24 lg:py-28 bg-[#F6F9FC]">
       <Container>
         <SectionHeading
-          eyebrow="SYMPTOMS &amp; ISSUES"
-          title="Common Plumbing Problems We Help You Navigate"
-          description="Identify your household symptoms to learn about likely causes and discover the appropriate service solutions."
+          eyebrow="DIAGNOSTIC SYMPTOM GUIDE"
+          title="Common Plumbing Repair Issues We Help Elizabeth Residents Resolve"
+          description="Recognize warning signs early to avoid catastrophic water damage and connect with the right plumbing repair specialist in Elizabeth, NJ."
         />
 
         {/* 2 Featured Symptom Cards */}

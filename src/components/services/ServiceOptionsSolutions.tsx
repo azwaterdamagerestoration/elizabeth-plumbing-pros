@@ -58,9 +58,9 @@ export function ServiceOptionsSolutions({
                           <span className="text-4xl font-extrabold text-[#23B8D4]">
                             {String(idx + 1).padStart(2, "0")}
                           </span>
-                          <h4 className="text-xl font-bold mt-2">
+                          <h3 className="text-xl font-bold mt-2">
                             {option.title}
-                          </h4>
+                          </h3>
                         </div>
                       </div>
                     )}

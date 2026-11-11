@@ -1,15 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import { ArrowDown, MapPin, Wrench, Flame, Droplets } from "lucide-react";
+import { ArrowDown, MapPin, Wrench, ShieldAlert, Clock, BadgeCheck } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { CallButton } from "@/shared/CallButton";
 import { Container } from "@/shared/Container";
 
 const heroBadges = [
-  { label: "Elizabeth Area Focus", icon: MapPin },
-  { label: "Plumbing Repairs", icon: Wrench },
-  { label: "Drain & Sewer Services", icon: Droplets },
-  { label: "Water Heater Services", icon: Flame },
+  { label: "24/7 Emergency Plumber", icon: ShieldAlert },
+  { label: "Same Day Plumber Near You", icon: Clock },
+  { label: "Residential & Commercial", icon: Wrench },
+  { label: "Licensed Local Contractors", icon: BadgeCheck },
 ];
 
 export function HeroSection() {
@@ -26,7 +26,7 @@ export function HeroSection() {
           className="object-cover object-[78%_center] sm:object-[72%_center] lg:object-[82%_center]"
         />
 
-        {/* 2. Multi-Layer Precision Gradient Overlay (Dark Navy 95% left -> Subtle overlay right) */}
+        {/* 2. Multi-Layer Precision Gradient Overlay */}
         <div
           className="absolute inset-0 z-10 pointer-events-none"
           style={{
@@ -48,20 +48,20 @@ export function HeroSection() {
           {/* Eyebrow Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#102B4E]/80 backdrop-blur-md border border-[#23B8D4]/40 text-[#23B8D4] text-xs sm:text-sm font-extrabold tracking-wider uppercase shadow-md">
             <MapPin className="w-3.5 h-3.5 text-[#23B8D4] shrink-0" />
-            <span>PLUMBING SERVICES &bull; ELIZABETH, NJ</span>
+            <span>24/7 EMERGENCY &amp; LOCAL PLUMBING SERVICES &bull; ELIZABETH, NJ</span>
           </div>
 
           {/* Main H1 Heading */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[62px] font-extrabold tracking-tight leading-[1.12] text-white">
-            Plumbing Services in Elizabeth, NJ &mdash;{" "}
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[58px] font-extrabold tracking-tight leading-[1.12] text-white">
+            Plumbers in Elizabeth, NJ &mdash;{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#23B8D4] to-[#1677C8]">
-              Help When You Need It
+              24/7 Emergency Plumbing &amp; Local Repairs
             </span>
           </h1>
 
           {/* Supporting Description */}
-          <p className="text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed font-normal max-w-xl">
-            From leaking pipes and clogged drains to water heater problems and urgent plumbing repairs, call Elizabeth Plumbing Pros to discuss your needs and available service options.
+          <p className="text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed font-normal max-w-2xl">
+            Searching for a trusted <strong>plumber near me</strong> in Elizabeth, NJ? Whether you need an <strong>emergency plumber</strong> for a burst pipe, a <strong>same day plumber</strong> for a leaking water heater or blocked sewer line, or routine <strong>residential and commercial plumbing repairs</strong>, call Elizabeth Plumbing Pros to connect immediately with licensed local contractors.
           </p>
 
           {/* Dual Conversion CTA Buttons */}
@@ -77,7 +77,7 @@ export function HeroSection() {
               href="#services-section"
               className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl border border-white/30 bg-[#080F1F]/60 backdrop-blur-md text-white font-bold hover:bg-white/10 hover:border-white transition-all text-base min-h-[44px]"
             >
-              <span>EXPLORE OUR SERVICES</span>
+              <span>EXPLORE PLUMBING SERVICES</span>
               <ArrowDown className="w-4 h-4 text-[#23B8D4]" />
             </a>
           </div>
@@ -98,6 +98,9 @@ export function HeroSection() {
                 );
               })}
             </div>
+            <p className="mt-3 text-xs text-slate-400">
+              Serving Elizabethport, Elmora, Midtown, Peterstown &amp; all Union County communities &bull; Call {siteConfig.phone.display} for immediate dispatch.
+            </p>
           </div>
         </div>
       </Container>

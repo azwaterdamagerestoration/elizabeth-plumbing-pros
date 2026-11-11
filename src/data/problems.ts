@@ -14,9 +14,9 @@ export const commonProblemsData: ProblemItem[] = [
     id: "clogged-kitchen-sinks",
     title: "Clogged Kitchen Sinks",
     symptoms:
-      "Standing water in the sink basin, sluggish drainage, and foul odors from trapped grease, cooking oil residue, or disposal blockages.",
-    recommendedServiceSlug: "drain-cleaning-elizabeth-nj",
-    recommendedServiceTitle: "Explore Drain Cleaning",
+      "Standing water in the sink basin, acute localized stoppages, and foul odors from congealed cooking grease or disposal blockages.",
+    recommendedServiceSlug: "clogged-drain-repair-elizabeth-nj",
+    recommendedServiceTitle: "Explore Clogged Drain Repair",
     iconName: "Wrench",
   },
   {

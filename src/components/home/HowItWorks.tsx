@@ -1,5 +1,5 @@
 import React from "react";
-import { Phone, MessageSquare, CheckCircle } from "lucide-react";
+import { Phone, MapPin, CheckCircle } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { Container } from "@/shared/Container";
 import { SectionHeading } from "@/shared/SectionHeading";
@@ -24,29 +24,29 @@ const defaultSteps: HowItWorksStep[] = [
   {
     number: "01",
     icon: Phone,
-    title: "Call Us",
-    description: `Call ${siteConfig.phone.display} and describe your current plumbing concern, whether urgent or routine maintenance.`,
+    title: `Call ${siteConfig.phone.display}`,
+    description: `Call our local dispatch desk at ${siteConfig.phone.display}. Describe your current plumbing concern, whether an urgent leak, sewage backup, or scheduled water heater replacement.`,
   },
   {
     number: "02",
-    icon: MessageSquare,
-    title: "Discuss Your Needs",
+    icon: MapPin,
+    title: "Confirm Location & Urgency",
     description:
-      "Share your Elizabeth or Union County address, the observed symptoms, and your preferred scheduling window.",
+      "Share your Elizabeth or Union County neighborhood. Let our dispatch team know whether you need an immediate 24/7 emergency plumber or a same day plumber appointment.",
   },
   {
     number: "03",
     icon: CheckCircle,
-    title: "Explore Available Assistance",
+    title: "Connect with a Licensed Pro",
     description:
-      "Connect with an independent local plumbing specialist equipped to provide diagnostic estimates and perform repairs.",
+      "We connect you with a verified, licensed plumbing contractor who diagnoses the issue on-site, provides an upfront written estimate, and performs code-compliant repairs.",
   },
 ];
 
 export function HowItWorks({
-  eyebrow = "SIMPLE 3-STEP PROCESS",
-  title = "Getting Plumbing Help Is Simple",
-  description = "A direct, hassle-free phone-based approach to finding residential plumbing support in Elizabeth, NJ.",
+  eyebrow = "STREAMLINED DISPATCH PROCESS",
+  title = "How to Connect With a Licensed Plumber in Elizabeth",
+  description = "Whenever you think, 'I need a plumber near me,' our straightforward phone connection links you directly with qualified local plumbing contractors in minutes.",
   steps: customSteps,
   className = "",
 }: HowItWorksProps = {}) {
@@ -98,17 +98,16 @@ export function HowItWorks({
               );
             })}
           </div>
-        </div>
 
-        {/* Action Prompt */}
-        <div className="mt-14 text-center">
-          <CallButton
-            size="lg"
-            variant="primary"
-            label={`CALL ${siteConfig.phone.display}`}
-            trackingEvent="header_call_click"
-            className="shadow-xl hover:shadow-[#FF8533]/40 font-extrabold px-8 py-4 uppercase tracking-wide"
-          />
+          <div className="mt-14 text-center">
+            <CallButton
+              size="lg"
+              variant="primary"
+              label={`SPEAK TO A DISPATCHER: ${siteConfig.phone.display}`}
+              trackingEvent="how_it_works_call_click"
+              className="shadow-xl hover:shadow-[#FF8533]/40 font-extrabold text-base sm:text-lg px-8 py-4 uppercase tracking-wide"
+            />
+          </div>
         </div>
       </Container>
     </section>

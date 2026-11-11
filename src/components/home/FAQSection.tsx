@@ -74,16 +74,19 @@ export function FAQSection({
                   </div>
                 </button>
 
-                {isOpen && (
-                  <div
-                    id={`faq-answer-${faq.id}`}
-                    role="region"
-                    aria-labelledby={`faq-btn-${faq.id}`}
-                    className="px-6 sm:px-7 pb-7 pt-1 text-sm sm:text-base text-[#5D6B7C] leading-relaxed border-t border-slate-100"
-                  >
-                    {faq.answer}
-                  </div>
-                )}
+                <div
+                  id={`faq-answer-${faq.id}`}
+                  role="region"
+                  aria-labelledby={`faq-btn-${faq.id}`}
+                  hidden={!isOpen}
+                  className={
+                    isOpen
+                      ? "px-6 sm:px-7 pb-7 pt-1 text-sm sm:text-base text-[#5D6B7C] leading-relaxed border-t border-slate-100"
+                      : "hidden"
+                  }
+                >
+                  {faq.answer}
+                </div>
               </div>
             );
           })}

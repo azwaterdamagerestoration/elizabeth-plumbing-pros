@@ -1,7 +1,55 @@
 import React from "react";
+import Link from "next/link";
 import { BookOpen, CheckCircle2 } from "lucide-react";
 import { Container } from "@/shared/Container";
 import { HomeownerGuideSection } from "@/types";
+
+function renderTextWithLinks(text: string): React.ReactNode {
+  const parts: (string | React.ReactNode)[] = [];
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.substring(lastIndex, match.index));
+    }
+    const label = match[1];
+    const href = match[2];
+    const isInternal = href.startsWith("/") || href.startsWith("#");
+
+    if (isInternal) {
+      parts.push(
+        <Link
+          key={`${match.index}-${href}`}
+          href={href}
+          className="font-semibold text-[#1677C8] hover:text-[#0D5494] underline decoration-blue-200 underline-offset-2 hover:decoration-[#1677C8] transition-colors"
+        >
+          {label}
+        </Link>
+      );
+    } else {
+      parts.push(
+        <a
+          key={`${match.index}-${href}`}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-semibold text-[#1677C8] hover:text-[#0D5494] underline decoration-blue-200 underline-offset-2 hover:decoration-[#1677C8] transition-colors"
+        >
+          {label}
+        </a>
+      );
+    }
+    lastIndex = regex.lastIndex;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex));
+  }
+
+  return parts.length > 0 ? parts : text;
+}
 
 interface HomeownerGuidanceProps {
   serviceTitle: string;
@@ -54,7 +102,7 @@ export function HomeownerGuidance({
 
                 <div className="space-y-3.5 text-sm sm:text-base text-[#5D6B7C] leading-relaxed">
                   {section.paragraphs.map((p, pIdx) => (
-                    <p key={pIdx}>{p}</p>
+                    <p key={pIdx}>{renderTextWithLinks(p)}</p>
                   ))}
                 </div>
 

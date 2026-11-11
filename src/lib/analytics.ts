@@ -5,6 +5,7 @@ export type AnalyticsEvent =
   | "mobile_sticky_call_click"
   | "footer_call_click"
   | "final_cta_call_click"
+  | "how_it_works_call_click"
   | "service_card_click"
   | "location_card_click"
   | "sidebar_blog_call_click"

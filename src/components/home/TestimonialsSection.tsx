@@ -41,9 +41,9 @@ export function TestimonialsSection() {
     <section className="py-20 sm:py-24 lg:py-28 bg-[#F6F9FC]">
       <Container>
         <SectionHeading
-          eyebrow="CONSUMER TRUST &amp; GUIDANCE"
-          title="What to Know Before Authorizing Plumbing Work"
-          description="Because we believe in complete transparency, here is a practical guide to help Elizabeth property owners prepare for service visits and verify contractor credentials."
+          eyebrow="CONSUMER TRUST &amp; HIRING GUIDANCE"
+          title="What to Know Before Hiring a Plumbing Contractor in Elizabeth, NJ"
+          description="Because transparency protects property owners, here is an essential checklist to verify licensing, obtain written estimates, and choose qualified local plumbers."
         />
 
         {/* 2-Column Editorial Trust Layout */}

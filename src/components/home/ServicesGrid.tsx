@@ -15,9 +15,9 @@ export function ServicesGrid() {
     <section id="services-section" className="py-20 sm:py-24 lg:py-28 bg-[#F6F9FC]">
       <Container>
         <SectionHeading
-          eyebrow="OUR PLUMBING SERVICES"
-          title="Plumbing Solutions for Your Home"
-          description="Explore common plumbing services available for homes and properties in Elizabeth, NJ."
+          eyebrow="COMPREHENSIVE PLUMBING SERVICES"
+          title="Full-Spectrum Plumbing Services in Elizabeth, NJ"
+          description="Explore reliable residential and commercial plumbing services delivered by licensed local plumbing contractors across Union County."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 sm:gap-8">
@@ -102,7 +102,7 @@ export function ServicesGrid() {
             href="/services"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl border border-slate-300 bg-white font-extrabold text-[#102B4E] hover:bg-slate-50 hover:border-slate-400 transition-all shadow-sm text-sm uppercase tracking-wider"
           >
-            <span>View All 12 Plumbing Services</span>
+            <span>View All {servicesData.length} Plumbing Services</span>
             <ArrowRight className="w-4 h-4 text-[#1677C8]" />
           </Link>
         </div>

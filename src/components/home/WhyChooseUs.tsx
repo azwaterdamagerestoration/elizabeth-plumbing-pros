@@ -2,11 +2,10 @@ import React from "react";
 import {
   MapPin,
   Wrench,
-  PhoneCall,
-  BookOpen,
-  Globe2,
+  Clock,
+  Building2,
+  PackageCheck,
   CheckCircle2,
-  ShieldCheck,
 } from "lucide-react";
 import { Container } from "@/shared/Container";
 import { SectionHeading } from "@/shared/SectionHeading";
@@ -14,33 +13,33 @@ import { SectionHeading } from "@/shared/SectionHeading";
 const supportingBenefits = [
   {
     icon: Wrench,
-    title: "Broad Plumbing Coverage",
+    title: "Residential Plumber Services",
     description:
-      "Comprehensive resources covering common residential concerns from fixture leaks to water heaters.",
+      "Comprehensive plumbing repair near you for leaking pipes, running toilets, faucets, and complete bathroom plumbing.",
     accent: "text-[#1677C8]",
     bg: "bg-blue-50",
   },
   {
-    icon: PhoneCall,
-    title: "Straightforward Phone Contact",
+    icon: Building2,
+    title: "Commercial Plumbing Solutions",
     description:
-      "Direct phone-based communication without confusing automated callback queues.",
+      "Experienced commercial plumbers for Elizabeth storefronts, restaurants, offices, grease traps, and multi-family complexes.",
     accent: "text-[#FF8533]",
     bg: "bg-orange-50",
   },
   {
-    icon: BookOpen,
-    title: "Helpful Symptom Insights",
+    icon: Clock,
+    title: "24/7 & Same Day Plumber Dispatch",
     description:
-      "Clear explanations of plumbing issues so homeowners can make informed decisions.",
+      "Fast response when you need an emergency plumber or same day plumbing repair for active leaks and drain clogs.",
     accent: "text-[#23B8D4]",
     bg: "bg-cyan-50",
   },
   {
-    icon: Globe2,
-    title: "Nearby Community Coverage",
+    icon: PackageCheck,
+    title: "Heavy-Duty Plumbing Supplies",
     description:
-      "Dedicated connection support for Union, Westfield, Cranford, Roselle, and Fanwood.",
+      "Technicians install durable, code-compliant plumbing supply parts, brass valves, and materials for lasting longevity.",
     accent: "text-[#102B4E]",
     bg: "bg-slate-100",
   },
@@ -65,15 +64,16 @@ interface WhyChooseUsProps {
 }
 
 export function WhyChooseUs({
-  eyebrow = "WHY CONTACT US",
-  title = "Why Elizabeth Residents Contact Plumbing Pros",
-  description = "Connecting property owners with helpful plumbing resources and available independent local professionals.",
-  featuredBadge = "Key Differentiator",
-  featuredTitle = "Local Elizabeth & Union County Focus",
-  featuredDescription = "Rather than dealing with impersonal nationwide directories that dispatch providers from distant counties, our connection platform focuses specifically on Elizabeth neighborhoods—from Elmora and Elizabethport to Midtown—and immediate Union County communities.",
+  eyebrow = "LOCAL PLUMBING EXCELLENCE",
+  title = "Why Elizabeth Property Owners Choose Our Plumbing Network",
+  description = "Connecting you directly with vetted local plumbers, same day service availability, and verified New Jersey licensed contractors.",
+  featuredBadge = "LOCAL COMMUNITY EXPERTISE",
+  featuredTitle = "Dedicated Elizabeth & Union County Plumbers",
+  featuredDescription = "Avoid nationwide call centers that route technicians from distant counties. Our local platform links you directly with experienced plumbers near me across Elizabeth neighborhoods—from Elmora and Elizabethport to Midtown and Peterstown—who arrive fast and understand local building codes.",
   featuredPoints = [
-    "Knowledge of local housing styles & piping",
-    "Direct phone coordination with available pros",
+    "Rapid dispatch from local plumbers near Elizabeth & Union County",
+    "Direct phone coordination with zero hold times at (908) 738-8526",
+    "Expertise in historic cast iron, galvanized, copper, and modern PEX piping",
   ],
   benefits: customBenefits,
   className = "",
@@ -124,40 +124,40 @@ export function WhyChooseUs({
               </div>
             </div>
 
-            <div className="pt-6 relative z-10">
-              <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-white/80 bg-white/10 px-4 py-2 rounded-xl border border-white/15">
-                <ShieldCheck className="w-4 h-4 text-[#23B8D4]" />
-                <span>Transparent Referral Service</span>
-              </span>
+            <div className="relative z-10 mt-8 pt-6 border-t border-white/15 text-xs text-slate-300 font-medium">
+              Vetted New Jersey Master Plumbers &bull; Upfront Written Estimates
             </div>
           </div>
 
-          {/* 4 Supporting Benefit Cards (Right 7 Cols on LG in 2x2 Grid) */}
-          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-7">
-            {activeBenefits.map((benefit, idx) => {
+          {/* 4 Supporting Feature Cards (Right 7 Cols on LG) */}
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
+            {activeBenefits.map((benefit) => {
               const Icon = benefit.icon || Wrench;
-              const bg = benefit.bg || "bg-blue-50";
-              const accent = benefit.accent || "text-[#1677C8]";
-
               return (
                 <div
-                  key={idx}
+                  key={benefit.title}
                   className="p-6 sm:p-7 rounded-3xl bg-white border border-slate-200/90 shadow-sm hover:shadow-xl hover:border-slate-300 transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1"
                 >
                   <div>
                     <div
-                      className={`w-12 h-12 rounded-2xl ${bg} ${accent} flex items-center justify-center mb-5 group-hover:scale-105 transition-transform`}
+                      className={`w-12 h-12 rounded-2xl ${benefit.bg || "bg-blue-50"} ${
+                        benefit.accent || "text-[#1677C8]"
+                      } flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-200 shadow-sm`}
                     >
                       <Icon className="w-6 h-6" />
                     </div>
 
-                    <h4 className="text-lg font-extrabold text-[#102B4E] group-hover:text-[#1677C8] transition-colors leading-snug">
+                    <h3 className="text-lg sm:text-xl font-extrabold text-[#102B4E] group-hover:text-[#1677C8] transition-colors leading-snug">
                       {benefit.title}
-                    </h4>
+                    </h3>
 
-                    <p className="mt-2.5 text-sm text-[#5D6B7C] leading-relaxed">
+                    <p className="mt-2.5 text-xs sm:text-sm text-[#5D6B7C] leading-relaxed">
                       {benefit.description}
                     </p>
+                  </div>
+
+                  <div className="mt-5 pt-4 border-t border-slate-100 flex items-center gap-1.5 text-xs font-bold text-[#1677C8]">
+                    <span>Verified Professional Service</span>
                   </div>
                 </div>
               );
